@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "ClassedUp",
+    "version": "1.0",
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "photos/*.jpg"
+            ],
+            "matches":[
+                "<all_urls>"
+            ]
+        }
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": ["classedup.js"]   
+        }
+    ],
+    "action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html",
+        "default_title": "A popup will come here."
+    }
+}
